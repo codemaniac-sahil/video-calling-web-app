@@ -25,14 +25,8 @@ body {
     display: flex;
     margin: 0 20px;
 }
-.gridContainer{
-    display: flex;
 
-}
-.video{
-    display: flex;
-    flex-wrap: wrap;
-}
+
 .container{
     display: flex;
 }
@@ -43,3 +37,51 @@ body {
     justify-content: center;
     margin-top: 10px;
 }
+.video1{
+    width: 100%;
+}
+.video {
+  width: 550px;
+  
+}
+root {
+    display: flex;
+    flex-direction: column;
+  }
+  .gridContainer {
+    width: 100%;
+    justify-content: center;
+    gap: 2em;
+    
+  }
+  .container {
+    width: 600px;
+    margin: 35px 0;
+    padding: 0;
+    
+  }
+  .margin {
+    margin-top: 20;
+  }
+  padding {
+    padding: 20;
+  }
+  .paper {
+    padding: 10px 20px;
+    border: 2px solid black;
+  }
+  @media screen and (max-width:400px) {
+    .gridContainer{
+      flex-direction: column;
+    }
+    .video {
+      width: 350px;
+      
+    }
+  }
+  @media screen and (max-width:500px){
+    .video{
+      width:450px ;
+    }
+  }
+  

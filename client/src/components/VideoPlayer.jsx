@@ -8,14 +8,14 @@ import { useContext } from 'react'
 const VideoPlayer = () => {
   const {name,callAccepted,myVideo,userVideo,callEnded,stream,call}=useContext(SocketContext)
   return (
-    <div className='video'>
-    <Grid container>
+    
+    <Grid container className='gridContainer'>
       {/* My Video */}
 
       {
         stream &&(
-      <Paper>
-        <Grid >
+      <Paper  className='paper'>
+        <Grid item xs={12} md={6}>
           <Typography variant='h5' gutterBottom>{name||'Name'}</Typography>
           <video playsInline muted ref={myVideo} autoPlay className='video'/>
 
@@ -30,10 +30,10 @@ const VideoPlayer = () => {
       {
         callAccepted && !callEnded &&(
 
-      <Paper >
-        <Grid >
+      <Paper className='paper' >
+        <Grid item xs={12} md={6}>
           <Typography variant='h5' gutterBottom>{call.name||'Name'}</Typography>
-          <video playsInline ref={userVideo} autoPlay/>
+          <video playsInline ref={userVideo} className='video' autoPlay/>
           
         </Grid>
 
@@ -42,7 +42,7 @@ const VideoPlayer = () => {
       }
 
     </Grid>
-    </div>
+   
   )
 }
 
