@@ -7,7 +7,7 @@ import Peer from 'simple-peer'
 const SocketContext=createContext()
 
 
-const socket=io('https://video-calling-app-react.herokuapp.com')
+const socket=io('https://video-calling-app-react.herokuapp.com');
 
 
 const ContextProvider=({children})=>{

@@ -10,7 +10,7 @@ import './styles.css'
 const App = () => {
   return (
     <div className='app'> 
-        <AppBar position="static" color="inherit" className='navbar' >
+        <AppBar position="static" color="inherit"  >
             <Typography variant='h2' align='center'>Video Calling App</Typography>
 
 

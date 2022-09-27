@@ -9,13 +9,13 @@ const Options = ({children}) => {
   const [idToCall, setIdToCall] = useState('')
   return (
     <Container >
-      <Paper sx={{padding:'20px 20px'}}>
+      <Paper className='lms'>
         <form  noValidate autoComplete='off'>
-          <Grid container sx={{display:'flex',gap:'2em',justifyContent:'center',alignItems:'center'} }>
+          <Grid className='form'>
             <Grid >
               <Typography gutterBottom variant="h6">Account Info</Typography>
               <TextField label='Name' value={name} onChange={(e)=>setName(e.target.value)} fullWidth/>
-              {console.log(me)}
+              
               <CopyToClipboard text={me}>
                 <Button sx={{marginTop:'1em'}} variant='contained' color='primary' startIcon={<Assignment fontSize='large'/>}>
                   Copy Your Id
@@ -29,7 +29,7 @@ const Options = ({children}) => {
               <TextField label='ID to call' value={idToCall} onChange={(e)=>setIdToCall(e.target.value)} fullWidth/>
              {
               callAccepted && !callEnded ? (
-                <Button variant="contained" color="secondary" startIcon={<PhoneDisabled fontSize='large'/>}
+                <Button sx={{marginTop:'1em'}} variant="contained" color="secondary" startIcon={<PhoneDisabled fontSize='large'/>}
                 onClick={leaveCall}>
 
                   Hang Up

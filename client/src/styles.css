@@ -15,73 +15,51 @@ body {
     padding: 0;
 }
 .app{
-    display: flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+.videoplayer{
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.paper1{
+  display: flex;
+  padding: 10px 20px;
+  width: 60%;
+}
+video{
+  width: 100%;
+}
+@media screen and (max-width:796px){
+  .videoplayer{
     flex-direction: column;
-    gap: 2em;
-    align-items: center;
-    justify-content: center;
-}
-.navbar{
-    display: flex;
-    margin: 0 20px;
-}
-
-
-.container{
-    display: flex;
-}
-.notification{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10px;
-}
-.video1{
-    width: 100%;
-}
-.video {
-  width: 550px;
+    flex-wrap: wrap;
+  }
   
 }
-root {
-    display: flex;
-    flex-direction: column;
-  }
-  .gridContainer {
-    width: 100%;
+.lms{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  padding: 20px 10px;
+  flex-direction: column
+}
+.form{
+  display: flex;
+  gap: 2em;
+  flex-direction: column;
+}
+@media screen and (max-width:796px){
+  .form{
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 2em;
-    
+    /* align-items: center; */
   }
-  .container {
-    width: 600px;
-    margin: 35px 0;
-    padding: 0;
-    
-  }
-  .margin {
-    margin-top: 20;
-  }
-  padding {
-    padding: 20;
-  }
-  .paper {
-    padding: 10px 20px;
-    border: 2px solid black;
-  }
-  @media screen and (max-width:400px) {
-    .gridContainer{
-      flex-direction: column;
-    }
-    .video {
-      width: 350px;
-      
-    }
-  }
-  @media screen and (max-width:500px){
-    .video{
-      width:450px ;
-    }
-  }
-  
+}
