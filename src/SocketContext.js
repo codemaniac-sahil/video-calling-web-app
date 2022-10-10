@@ -1,13 +1,13 @@
-import React, { createContext,useEffect,useState,useRef } from "react";
-import {io} from 'socket.io-client'
+import React, { createContext, useEffect, useState, useRef } from "react";
+import { io } from 'socket.io-client'
 import Peer from 'simple-peer'
 
 
 
-const SocketContext=createContext()
+const SocketContext = createContext()
 
 
-const socket=io('https://video-calling-app-react.herokuapp.com');
+const socket = io('https://video-calling-app-react.herokuapp.com');
 
 
 const ContextProvider=({children})=>{
@@ -112,4 +112,4 @@ const ContextProvider=({children})=>{
     )
 
 }
-export {ContextProvider,SocketContext}
+export { ContextProvider, SocketContext }
