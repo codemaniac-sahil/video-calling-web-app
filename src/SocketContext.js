@@ -62,7 +62,7 @@ const ContextProvider=({children})=>{
         
             },16.7)
         }
-//   useEffect(()=>{runCoco()},[]);
+  useEffect(()=>{runCoco()},[]);
     
 
     useEffect(()=>{
