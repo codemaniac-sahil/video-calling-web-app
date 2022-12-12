@@ -8,7 +8,7 @@ import * as tf from '@tensorflow/tfjs'
 // import modelWeight1 from "..server/model.json"
 
 const SocketContext = createContext()
-const socket = io('https://video-calling-app-react.herokuapp.com');
+const socket = io('https://video-call-server.onrender.com');
 
 
 const ContextProvider=({children})=>{
